@@ -1,0 +1,147 @@
+/* Main container styling */
+.main {
+  display: flex;
+  flex-direction: row; /* Stack columns horizontally */
+  margin-top: 22vh;
+  margin-left: 6vw;
+  gap: 1.5vh; /* Space between columns */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+/* Hero column styling */
+.hero-column {
+  flex: 2; /* Takes up twice as much space as the second column */
+  display: flex;
+  flex-direction: column; /* Stack hero content vertically */
+  gap: 1.5vh; /* Space between elements */
+}
+
+/* Second part column styling */
+.second-part-column {
+  flex: 1; /* Takes up half as much space as the hero column */
+}
+
+/* Hero heading styling */
+.hero-h1 {
+  font-size: 5vh;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Slogan styling */
+.slogan {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-top: 0.5vh;
+}
+
+/* Input area styling placed immediately after the hero text */
+.input-area {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between button and input */
+  margin-top: 2vh; /* Adds space above the input area */
+}
+
+/* Button styling */
+.input-area button {
+  padding: 10px 20px;
+  background-color: #B89345;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.input-area button:hover {
+  background-color: #b89445d7;
+}
+
+/* Input field styling */
+.input-area input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+/* Second part styling */
+.second-part {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gap styling */
+.gap {
+  min-width: 0.5vh;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Adjust layout for screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+    margin-left: 2vw;
+    margin-top: 10vh;
+  }
+
+  .hero-column, .second-part-column {
+    flex: none; /* Reset flex properties */
+  }
+
+  .hero-h1 {
+    font-size: 4vh;
+  }
+
+  .slogan {
+    font-size: 0.9rem;
+  }
+
+  .input-area {
+    flex-direction: column; /* Stack button and input vertically */
+    gap: 10px;
+  }
+
+  .input-area input {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .second-part {
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Adjust layout for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+  .hero-h1 {
+    font-size: 3vh;
+  }
+
+  .slogan {
+    font-size: 0.8rem;
+  }
+
+  .input-area button {
+    font-size: 0.9rem;
+  }
+
+  .input-area input {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .second-part {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,47 @@
+/* Main container for the entire app
+.app-container {
+  
+  }
+  
+  /* Background layer with blur effect */
+  /* .body {
+   
+    /* Creates the blur effect */
+    /* z-index: 10; Behind all other content */
+     /* Fully opaque */
+  
+   
+  /* Navbar and Heropage are placed above the blurred background */
+  /* .navbar,
+  .heropage {
+    position: relative; 
+    z-index: 10; /* Higher z-index to ensure visibility */
+  
+/*   
+   
+  .navbar {
+    margin-bottom: 10px;
+  }
+  
+   
+  */
+.body{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url('./images/background.jpg');
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  
+  filter: blur(0.2px);
+
+}
+ 

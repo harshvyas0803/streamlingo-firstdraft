@@ -1,0 +1,52 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  /* Hero Image Styling */
+  .hero-image {
+    width: 23vw;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  
+  /* Main Container Styling */
+  .main-container {
+    display: flex;
+    margin-top: 0.5em;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Media Query for Screens 549px or Less */
+  @media (max-width: 549px) {
+    .hero-image {
+      width: 50vw; /* Makes the image larger on smaller screens */
+      margin-top: 0.5em; /* Adjust margin for better spacing */
+    }
+  
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
