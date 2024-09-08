@@ -28,31 +28,31 @@ const DateTimeDisplay = () => {
   });
 
   return (
-    <div>
+    <div className='main'>
          <p className='date'> {formattedTime}|{formattedDate} </p>
       
     </div>
   );
 };
 
-// Optional inline styles
-const styles = {
-  container: {
-    textAlign: 'center',
-    padding: '10px',
-    borderRadius: '8px',
-    backgroundColor: '#f5f5f5',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  },
-  date: {
-    fontSize: '1.2rem',
-    color: '#333',
-  },
-  time: {
-    fontSize: '1.5rem',
-    color: '#007bff',
-    fontWeight: 'bold',
-  },
-};
+// // Optional inline styles
+// const styles = {
+//   container: {
+//     textAlign: 'center',
+//     padding: '10px',
+//     borderRadius: '8px',
+//     backgroundColor: '#f5f5f5',
+//     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+//   },
+//   date: {
+//     fontSize: '1.2rem',
+//     color: '#333',
+//   },
+//   time: {
+//     fontSize: '1.5rem',
+//     color: '#007bff',
+//     fontWeight: 'bold',
+//   },
+// };
 
 export default DateTimeDisplay;

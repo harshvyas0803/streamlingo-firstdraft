@@ -5,10 +5,13 @@
   font-size: 2vh; font-weight: 600;
 }
 
-
+.main{
+  display: flex;  
+}
 .date {
-  margin-left: 30vw;   
-  margin-top: 2vh;    margin-top: 4vh;
+  
+color: gray;
+   
 }
 
 /* Media Query for Small Screens */
@@ -21,8 +24,8 @@
 
 @media (max-width: 480px) {
   .date {
-    margin-left: 5vw; /* Further reduction for mobile screens */
-    margin-top: 1vh;  /* Keeps top margin consistent */
-    font-size: 1.8vh; /* Optional: Adjust font size if needed */
+    margin-left: 5vw;  
+    margin-top: 1vh;   
+    font-size: 1.8vh;  
   }
 }

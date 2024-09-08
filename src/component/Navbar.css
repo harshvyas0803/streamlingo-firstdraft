@@ -1,52 +1,56 @@
 /* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
  
-  /* Hero Image Styling */
+/* .navbar-container {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 1em;
+  z-index: 10;
+  margin-right: 2em;  
+} */
+
+/* Hero Image Styling */
+.hero-image { 
+  width: 23vw;
+  margin-top: 1em;
+  margin-left: auto; /* Aligns to the right */
+  margin-right: 2em; /* Spacing from the right edge */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Adjustments for screens 768px or less */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0.5em;
+  }
+
   .hero-image {
-    width: 23vw;
-    margin-top: 1em;
-    margin-left: 1em;
+    width: 20vw; /* Adjust width for tablets */
+    margin-left: 1em; /* Adjust margin for better alignment */
+    margin-right: 1em; /* Reduce margin on smaller screens */
   }
-  
-  /* Main Container Styling */
-  .main-container {
-    display: flex;
-    margin-top: 0.5em;
+}
+
+/* Adjustments for screens 549px or less */
+@media (max-width: 549px) {
+  .hero-image {
+    width: 50vw; /* Makes the image larger on smaller screens */
+    margin-top: 0.5em; /* Adjust margin for better spacing */
+    margin-left: 0; /* Aligns to the left on very small screens */
+    margin-right: 0; /* Remove right margin */
   }
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Media Query for Screens 549px or Less */
-  @media (max-width: 549px) {
-    .hero-image {
-      width: 50vw; /* Makes the image larger on smaller screens */
-      margin-top: 0.5em; /* Adjust margin for better spacing */
-    }
-  
-    .main-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .navbar-container {
+    justify-content: center; /* Center-align content on very small screens */
   }
-  
+}
